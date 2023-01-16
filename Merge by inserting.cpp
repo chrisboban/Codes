@@ -18,10 +18,10 @@ void merge(vector<int> &elements, int left, int mid, int right)
 {	
 	//insert the elements in the right part into the left part
 	int key;
-	for(int i = mid+1;i <=r ; i++){
+	for(int i = mid+1;i <=right ; i++){
 		key = elements[i];
 		int j = i-1;
-		while(j>=l && elements[j]>key)
+		while(j>=left && elements[j]>key)
 		{
 			elements[j+1] = elements[j];
 			j--;
