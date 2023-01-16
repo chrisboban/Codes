@@ -17,10 +17,7 @@ using namespace std;
 void merge(vector<int> &elements, int left, int mid, int right)
 {	
 	//insert the elements in the right part into the left part
-	int l,r,m,key,temp;
-	l = left;
-	r = right;
-	m = mid;
+	int key;
 	for(int i = mid+1;i <=r ; i++){
 		key = elements[i];
 		int j = i-1;
